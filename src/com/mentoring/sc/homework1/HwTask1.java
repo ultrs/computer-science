@@ -18,7 +18,7 @@ public class HwTask1 {
 //        int minutes = 29;
 //        int minutes = 30;
 //        int minutes = 44;
-//        int minutes = 45;
+//        
         int minutes = 59;
         isQuarter(minutes);
     }
