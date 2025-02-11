@@ -22,9 +22,9 @@ public class Task1 {
     private static int[] getPositive(int[] array) {
         int counter = 0;
         int[] result = new int[getPositiveLength(array)];
-        for (int k : array)
-            if (k >= 0) {
-                result[counter] = k;
+        for (int element : array)
+            if (element >= 0) {
+                result[counter] = element;
                 counter++;
             }
         return result;

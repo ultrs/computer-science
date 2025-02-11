@@ -18,17 +18,21 @@ public class Task1 {
     private static int evenCounter(int value) {
         int counter = 0;
         while (value != 0) {
-            if ((value % 10) % 2 == 0)
+            if (isEven(value % 10))
                 counter++;
             value /= 10;
         }
         return counter;
     }
 
+    private static boolean isEven(int value) {
+        return value % 2 == 0;
+    }
+
     private static int oddCounter(int value) {
         int counter = 0;
         while (value != 0) {
-            if ((value % 10) % 2 != 0)
+            if (!isEven(value % 10))
                 counter++;
             value /= 10;
         }

@@ -18,9 +18,10 @@ public class Task2 {
     private static int reversNumber(int number) {
         int result = 0;
         while (number != 0) {
-            result += (number % 10) * 10;
+            int digit = number % 10;
+            result = result * 10 + digit;
             number /= 10;
         }
-        return result / 10;
+        return result;
     }
 }

@@ -10,16 +10,16 @@ package com.mentoring.sc.homework2.cycleHomework;
 
 public class Task3 {
 
-    private final static double START_SALARY = 600.0;
-    private final static double INCREASE_SALARY = 400.0;
-    private final static double PERCENT = 0.02;
-    private final static double INVEST_PERCENT = 0.10;
-    private final static double EXPENDITURE = 300.0;
-    private final static int PERIOD = 38;
+    private static final double START_SALARY = 600.0;
+    private static final double INCREASE_SALARY = 400.0;
+    private static final double PERCENT = 0.02;
+    private static final double INVEST_PERCENT = 0.10;
+    private static final double EXPENDITURE = 300.0;
+    private static final int PERIOD = 38;
 
 
     public static void main(String[] args) {
-        System.out.println((int) calculator());
+        System.out.println(Math.round(calculator()));
     }
 
     private static double calculator() {
